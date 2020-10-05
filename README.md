@@ -32,3 +32,5 @@ Code examples can be found here: https://github.com/hjwp/book-example/
     (superlists) $ pip install "django<1.12" "selenium<4"
 
 # Part I - The Basics of TDD & Django
+
+* [Docs/Chapter1.md]
