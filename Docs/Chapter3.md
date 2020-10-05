@@ -25,5 +25,27 @@ Functional tests should help you build an application with the right functionali
 
     $ python manage.py test
 
+## Django’s MVC, URLs, and View Functions
 
+Django’s main job is to decide what to do when a user asks for a particular URL on our site
 
+1. An HTTP request comes in for a particular URL
+2. Django uses some rules to decide which view function should deal with the
+request (this is referred to as resolving the URL).
+3. The view function processes the request and returns an HTTP response.
+
+view function we’re going to write next, which will actually return the HTML we want
+urls.py to map URLs to view functions
+
+## Unit Testing a View
+
+## Useful Commands and Concepts
+
+    $ python manage.py runserver # Running the Django dev server
+    $ python functional_tests.py # Running the functional tests
+    $ python manage.py test # Running the unit tests
+
+The unit-test/code cycle
+1. Run the unit tests in the terminal.
+2. Make a minimal code change in the editor.
+3. Repeat!
