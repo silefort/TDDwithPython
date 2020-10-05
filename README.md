@@ -33,4 +33,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 
 # Part I - The Basics of TDD & Django
 
-* [Docs/Chapter1.md]
+[Chapter 1 - Getting Django Set Up Using a Functional Test](Docs/Chapter1.md)
