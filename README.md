@@ -35,3 +35,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 
 [Chapter 1 - Getting Django Set Up Using a Functional Test](Docs/Chapter1.md)
 [Chapter 2 - Extending our Functional Test Using the unittest Module](Docs/Chapter2.md)
+[Chapter 3 - Testing a Simple Home Page with Unit Tests](Docs/Chapter3.md)
