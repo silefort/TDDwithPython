@@ -1,6 +1,7 @@
 db.sqlite3
 geckodriver.log
 *.swp
+*.swo
 *.un~
 __pycache__
 *.pyc
