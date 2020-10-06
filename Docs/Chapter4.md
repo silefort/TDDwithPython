@@ -20,3 +20,13 @@ Unit tests are really about testing logic, flow control, and configuration
 What we want to do now is make our view function return exactly the same HTML, but just using a different process
 
 You need to register your app to Django adding it to the `settings.py` file under `INSTALLED_APPS` list
+
+When refactoring, work on either the code or the tests, but not both at once
+
+## Overall TDD Process
+
+you can think of the functional test as being a high-level view of the cycle, where “writing the code” to get the functional tests to pass actually involves using another, smaller TDD cycle which uses unit tests
+
+We write a functional test and see it fail. Then, the process of “writing code” to get it to pass is a mini-TDD cycle of its own: we write one or more unit tests, and go into the unit-test/code cycle until the unit tests pass. Then, we go back to our FT to check that it gets a little further, and we can write a bit more of our application—using more unit tests, and so on.
+
+The functional tests are the ultimate judge of whether your application works or not. The unit tests are a tool to help you along the way
