@@ -21,6 +21,6 @@ class HomePageTest(TestCase):
         html = response.content.decode('utf8')
         # We want it to start with an <html> tag which gets closed at the end
         self.assertTrue(html.startswith('<html>'))
-        self.assertTrue(html.endswith('</html>'))
+        self.assertTrue(html.strip().endswith('</html>'))
         # we want a <title> tag somewhere in the middle, with the words “To-Do lists” in it
         self.assertIn('<title>To-Do lists</title>', html)
