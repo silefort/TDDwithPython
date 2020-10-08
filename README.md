@@ -36,4 +36,6 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 [Chapter 1 - Getting Django Set Up Using a Functional Test](Docs/Chapter1.md)
 [Chapter 2 - Extending our Functional Test Using the unittest Module](Docs/Chapter2.md)
 [Chapter 3 - Testing a Simple Home Page with Unit Tests](Docs/Chapter3.md)
-[Chapter 4 - What are we doing with all these Tests ? ( And, refactoring)](Docs/Chapter4.md)
+[Chapter 4 - What Are We Doing with All These Tests? (And, Refactoring)](Docs/Chapter4.md)
+[Chapter 5 - Saving User Input: Testing the Database](Docs/Chapter5.md)
+[Chapter 6 - Improving Functional Tests: Ensuring Isolation and Removing Voodoo Sleeps](Docs/Chapter6.md)
