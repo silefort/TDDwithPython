@@ -29,3 +29,38 @@ In Django, the ORM’s job is to model the database, but there’s a second syst
 One way to think of it is as a version control system for your database
 
     $ python manage.py makemigrations # help us to build our first database migration
+
+## Creating our production Database with migrate
+
+Django creates a special test database for unit tests; it’s one of the magical things that Django’s TestCase does
+
+To set up our “real” database, we need to create it. SQLite databases are just a file on disk, and you’ll see in settings.py that Django, by default, will just put it in a file called db.sqlite3 in the base project directory
+
+ngo everything it needs to create the database, first via models.py and then when we created the migrations file. To actually apply it to creating a real data‐ base, we use another Django Swiss Army knife manage.py command, migrate:
+
+    $ python manage.py migrate
+
+Clean our Database:
+
+    $ rm db.sqlite3
+    $ python manage.py migrate --noinput
+
+## Usefull TDD Concepts:
+
+### Regression
+When new code breaks some aspect of the application which used to work.
+
+### Unexpected failure
+When a test fails in a way we weren’t expecting. This either means that we’ve made a mistake in our tests, or that the tests have helped us find a regression, and we need to fix something in our code.
+
+### Red/Green/Refactor
+Another way of describing the TDD process. Write a test and see it fail (Red), write some code to get it to pass (Green), then Refactor to improve the implementation.
+
+### Triangulation
+Adding a test case with a new specific example for some existing code, to justify generalising the implementation (which may be a “cheat” until that point).
+
+### Three strikes and refactor
+A rule of thumb for when to remove duplication from code. When two pieces of code look very similar, it often pays to wait until you see a third use case, so that you’re more sure about what part of the code really is the common, re-usable part to refactor out.
+
+### The scratchpad to-do list
+A place to write down things that occur to us as we’re coding, so that we can fin‐ ish up what we’re doing and come back to them later.
