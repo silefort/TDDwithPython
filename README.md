@@ -40,3 +40,7 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 * [Chapter 5 - Saving User Input: Testing the Database](Docs/Chapter5.md)
 * [Chapter 6 - Improving Functional Tests: Ensuring Isolation and Removing Voodoo Sleeps](Docs/Chapter6.md)
 * [Chapter 7 - Working Incrementally](Docs/Chapter7.md)
+
+# Part II - Web Development Sine Qua Nons
+
+* [Chapter 8 - Prettification: Layout and Styling, and What to Test About It](Docs/Chapter8.md)
