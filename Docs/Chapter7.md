@@ -39,3 +39,5 @@ At the unit test level, we’ll be adding new tests or modifying existing ones t
 We don’t need to implement our new, shiny design in a single big bang. Let’s make small changes that take us from a working state to a working state, with our design guiding us gently at each stage.
 
 ## Taking a First, Self-Contained Step: One New URL
+
+Deleting migrations is dangerous. We do need to do it now and again, because we don’t always get our models code right on the first go. But if you delete a migration that’s already been applied to a database somewhere, Django will be confused about what state it’s in, and how to apply future migrations. You should only do it when you’re sure the migration hasn’t been used. A good rule of thumb is that you should never delete or modify a migration that’s already been committed to your VCS.
