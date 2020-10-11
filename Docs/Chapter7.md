@@ -41,3 +41,14 @@ We don’t need to implement our new, shiny design in a single big bang. Let’s
 ## Taking a First, Self-Contained Step: One New URL
 
 Deleting migrations is dangerous. We do need to do it now and again, because we don’t always get our models code right on the first go. But if you delete a migration that’s already been applied to a database somewhere, Django will be confused about what state it’s in, and how to apply future migrations. You should only do it when you’re sure the migration hasn’t been used. A good rule of thumb is that you should never delete or modify a migration that’s already been committed to your VCS.
+
+## Some More TDD Philosophy
+
+### Working State to Working State (aka The Testing Goat vs. Refactoring Cat)
+Our natural urge is often to dive in and fix everything at once...but if we’re not careful, we’ll end up like Refactoring Cat, in a situation with loads of changes to our code and nothing working. The Testing Goat encourages us to take one step at a time, and go from working state to working state.
+
+### Split work out into small, achievable tasks
+Sometimes this means starting with “boring” work rather than diving straight in with the fun stuff, but you’ll have to trust that YOLO-you in the parallel universe is probably having a bad time, having broken everything, and struggling to get the app working again.
+
+### YAGNI
+You ain’t gonna need it! Avoid the temptation to write code that you think might be useful, just because it suggests itself at the time. Chances are, you won’t use it, or you won’t have anticipated your future requirements correctly. See Chapter 22 for one methodology that helps us avoid this trap.
