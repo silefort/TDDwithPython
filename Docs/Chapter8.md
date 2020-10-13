@@ -9,3 +9,13 @@ Most people will tell you you shouldn’t test aesthetics, and they’re right. 
 ## Django Template Inheritance
 
 We can make the two tem‐ plates inherit from a common “superclass” template
+
+## Static Files in Django
+Django, and indeed any web server, needs to know two things to deal with static files:
+1. How to tell when a URL request is for a static file, as opposed to for some HTML that’s going to be served via a view function
+2. Where to find the static file the user wants
+
+## Using Bootstrap Components to Improve the Look of the Site
+
+### Jumbotron!
+dd,,,,s
