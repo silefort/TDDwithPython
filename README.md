@@ -27,9 +27,10 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 
     (superlists) $ deactivate
 
-## Install Django & Selenium
+## Install Django, Selenium and other tools
 
     (superlists) $ pip install "django<1.12" "selenium<4"
+    (superlists) $ pip install litecli
 
 # Part I - The Basics of TDD & Django
 
