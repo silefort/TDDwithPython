@@ -45,3 +45,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 # Part II - Web Development Sine Qua Nons
 
 * [Chapter 8 - Prettification: Layout and Styling, and What to Test About It](Docs/Chapter8.md)
+* [Chapter 9 - Testing Deployment Using a Staging Site](Docs/Chapter9.md)
