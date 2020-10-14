@@ -46,3 +46,18 @@ A better solution is to use Unix domain sockets—they’re like files on disk, 
 
 		[Install]
 		WantedBy=multi-user.target
+
+## Production-Readiness for Server Deployments
+
+A few things to think about when trying to build a production-ready server environment:
+
+### Don’t use the Django dev server in production
+Something like Gunicorn or uWSGI is a better tool for running Django; they will let you run multiple workers, for example.
+
+### Don’t use Django to serve your static files
+There’s no point in using a Python process to do the simple job of serving static files. Nginx can do it, but so can other web servers like Apache or uWSGI.
+Check your settings.py for dev-only settings
+DEBUG=True and ALLOWED_HOSTS are the two we looked at, but you will probably have others (we’ll see more when we start to send emails from the server).
+
+### Security
+A serious discussion of server security is beyond the scope of this book, and I’d warn against running your own servers without learning a good bit more about it. (One reason people choose to use a PaaS to host their code is that it means a slightly fewer security issues to worry about.) If you’d like a place to start, here’s as good a place as any: My first 5 minutes on a server. I can definitely recom‐ mend the eye-opening experience of installing fail2ban and watching its logfiles to see just how quickly it picks up on random drive-by attempts to brute force your SSH login. The internet is a dangerous place!
