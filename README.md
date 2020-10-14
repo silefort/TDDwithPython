@@ -46,3 +46,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 
 * [Chapter 8 - Prettification: Layout and Styling, and What to Test About It](Docs/Chapter8.md)
 * [Chapter 9 - Testing Deployment Using a Staging Site](Docs/Chapter9.md)
+* [Chapter 10 - Getting to a Production-Ready Deployment](Docs/Chapter10.md)
