@@ -49,3 +49,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 * [Chapter 10 - Getting to a Production-Ready Deployment](Docs/Chapter10.md)
 * [Chapter 11 - Automating Deployment with Fabric](Docs/Chapter11.md)
 * [Chapter 12 - Splitting Our Tests into Multiple Files, and a Generic Wait Helper](Docs/Chapter12.md)
+* [Chapter 13 - Validation at the Database Layer](Docs/Chapter13.md)
