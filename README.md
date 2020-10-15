@@ -48,3 +48,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 * [Chapter 9 - Testing Deployment Using a Staging Site](Docs/Chapter9.md)
 * [Chapter 10 - Getting to a Production-Ready Deployment](Docs/Chapter10.md)
 * [Chapter 11 - Automating Deployment with Fabric](Docs/Chapter11.md)
+* [Chapter 12 - Splitting Our Tests into Multiple Files, and a Generic Wait Helper](Docs/Chapter12.md)
