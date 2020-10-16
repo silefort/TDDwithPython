@@ -1,4 +1,4 @@
-from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+from django.contrib.staticfiles.testing nstall cmake macvim python mono go nodejsimport StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
