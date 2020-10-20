@@ -3,6 +3,7 @@ from django.test import TestCase
 from django.urls import resolve
 from lists.models import Item, List
 from lists.views import home_page
+from lists.forms import ItemForm
 from django.utils.html import escape
 
 # Create your tests here.
@@ -13,6 +14,10 @@ class HomePageTest(TestCase):
         response = self.client.get('/')
         # Validate that Django uses the home template
         self.assertTemplateUsed(response, 'home.html')
+
+    def test_home_page_uses_item_form(self):
+        response = self.client.get('/')
+        self.assertIsInstance(response.context['form'], ItemForm)
 
 class ListViewTest(TestCase):
 
