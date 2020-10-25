@@ -53,3 +53,8 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 * [Chapter 14 - A Simple Form](Docs/Chapter14.md)
 * [Chapter 15 - More Advanced Forms](Docs/Chapter15.md)
 * [Chapter 16 - Dipping Our Toes, Very Tentatively, into JavaScript](Docs/Chapter16.md)
+* [Chapter 17 - Deploying Our New Code](Docs/Chapter17.md)
+
+# Part III - More Advanced Topics in Testing
+
+* [Chapter 18 - User Authentication, Spiking, and De-Spiking](Docs/Chapter18.md)
