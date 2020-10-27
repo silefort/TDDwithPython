@@ -58,3 +58,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 # Part III - More Advanced Topics in Testing
 
 * [Chapter 18 - User Authentication, Spiking, and De-Spiking](Docs/Chapter18.md)
+* [Chapter 19 - Using Mocks to Test External Dependencies or Reduce Duplication](Docs/Chapter19.md)
