@@ -20,7 +20,7 @@ class FunctionalTest(StaticLiveServerTestCase):
         self.browser.quit()
 
     def wait(fn):
-        def modified_fn():
+        def modified_fn(*args, **kwargs):
             start_time = time.time()
             while True:
                 try:
@@ -37,6 +37,7 @@ class FunctionalTest(StaticLiveServerTestCase):
         rows = table.find_elements_by_tag_name('tr')
         self.assertIn(row_text, [row.text for row in rows])
 
+    @wait
     def wait_for(self, fn):
         return fn()
 
