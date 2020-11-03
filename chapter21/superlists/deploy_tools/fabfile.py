@@ -53,7 +53,7 @@ def _update_static_files(source_folder, suffix):
     run(cmd)
 
 def _update_database(source_folder, suffix):
-    cmd = 'cd '  + source_folder + ' && ../virtualenv/bin/python .' + suffix + '/manage.py collectstatic --noinput'
+    cmd = 'cd '  + source_folder + ' && ../virtualenv/bin/python .' + suffix + '/manage.py migrate'
     run(cmd)
 
 # def _update_gunicorn_service(source_folder, suffix):
