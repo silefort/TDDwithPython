@@ -7,13 +7,14 @@ repo_url = 'https://github.com/silefort/TDDwithPython'
 def deploy():
     site_folder = f'/home/{env.user}/sites/{env.host}' 
     source_folder = site_folder + '/source' 
-    suffix = '/chapter16/superlists'
+    suffix = '/chapter21/superlists'
     _create_directory_structure_if_necessary(site_folder) 
     _get_latest_source(source_folder) 
     _update_settings(source_folder, env.host, suffix) 
     _update_virtualenv(source_folder, suffix) 
     _update_static_files(source_folder, suffix) 
     _update_database(source_folder, suffix)
+    # _update_gunicorn_service(source_folder, suffix)
 
 def _create_directory_structure_if_necessary(site_folder):
     for subfolder in ('database', 'static', 'virtualenv', 'source'):
@@ -54,3 +55,10 @@ def _update_static_files(source_folder, suffix):
 def _update_database(source_folder, suffix):
     cmd = 'cd '  + source_folder + ' && ../virtualenv/bin/python .' + suffix + '/manage.py collectstatic --noinput'
     run(cmd)
+
+# def _update_gunicorn_service(source_folder, suffix):
+    # gunicorn_service_file_path = '/etc/systemd/system/gunicorn-staging.ks.slef.fr.service'
+    # sed(gunicorn_service_file_path,
+        # 'WorkingDirectory=.+$',
+        # f'WorkingDirectory={source_folder}{suffix}'
+    # )
