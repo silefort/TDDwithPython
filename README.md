@@ -61,3 +61,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 * [Chapter 19 - Using Mocks to Test External Dependencies or Reduce Duplication](Docs/Chapter19.md)
 * [Chapter 20 - Test Fixtures and a Decorator for Explicit Waits](Docs/Chapter20.md)
 * [Chapter 21 - Server-Side Debugging](Docs/Chapter21.md)
+* [Chapter 22 - Finishing “My Lists”: Outside-In TDD](Docs/Chapter22.md)
