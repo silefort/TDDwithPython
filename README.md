@@ -62,3 +62,4 @@ Code examples can be found here: https://github.com/hjwp/book-example/
 * [Chapter 20 - Test Fixtures and a Decorator for Explicit Waits](Docs/Chapter20.md)
 * [Chapter 21 - Server-Side Debugging](Docs/Chapter21.md)
 * [Chapter 22 - Finishing “My Lists”: Outside-In TDD](Docs/Chapter22.md)
+* [Chapter 23 - Test Isolation, and “Listening to Your Tests”](Docs/Chapter23.md)
